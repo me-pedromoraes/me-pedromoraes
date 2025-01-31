@@ -13,6 +13,7 @@ jobs:
       contents: write  # Permissão para push
 
     steps:
+      # Checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -22,6 +23,7 @@ jobs:
       - name: Ensure dist directory exists
         run: mkdir -p dist
 
+      # Gerar a animação do Snake
       - name: Generate Snake animation
         uses: Platane/snk@v3
         with:
@@ -31,26 +33,34 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
+      # Armazenar as imagens como artifact no GitHub Actions (para download manual)
+      - name: Upload generated images
+        uses: actions/upload-artifact@v3
+        with:
+          name: snake-images
+          path: dist/
+
+      # Sincronizar com o branch remoto antes do push
       - name: Fetch latest changes
         run: |
           git fetch origin output || true
           git checkout output || git checkout -b output
           git reset --hard origin/output || true
 
+      # Configurar identidade do GitHub Actions
       - name: Configure Git identity
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Commit changes
+      # Commit das imagens geradas
+      - name: Commit and push images
         run: |
-          git add .
+          git add dist/
           git commit -m "Atualização automática do Snake Game" || echo "Nenhuma mudança para commit"
-
-      - name: Push changes
-        run: |
           git push origin output --force
 
+      # Publicar no GitHub Pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
