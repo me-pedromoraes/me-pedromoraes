@@ -1,7 +1,12 @@
 #  👋 Olá, eu sou Pedro Henrique de Moraes!
 
-## 🚀 Desenvolvedor Front-end apaixonado por criar interfaces web intuitivas e modernas.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake.svg" />
+  <img alt="github-snake" src="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake.svg" />
+</picture>
 
+## 🚀 Desenvolvedor Front-end apaixonado por criar interfaces web intuitivas e modernas.
 Com sólida formação em Análise e Desenvolvimento de Sistemas, possuo experiência prática no desenvolvimento de aplicações dinâmicas e responsivas, utilizando tecnologias de ponta como HTML5, CSS3, JavaScript, Angular e React.js.
 
 ## ️ 🛠️ Tecnologias e Habilidades  
@@ -46,8 +51,4 @@ Busco constantemente novos desafios para aprimorar minhas habilidades e contribu
 
 #frontenddeveloper #webdeveloper #html #css #javascript #angular #react #frontendDesenvolvedor
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake.svg" />
-  <img alt="github-snake" src="https://github.com/me-pedromoraes/me-pedromoraes/blob/output/github-snake.svg" />
-</picture>
+
