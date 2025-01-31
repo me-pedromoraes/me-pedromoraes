@@ -35,7 +35,7 @@ jobs:
 
       # Armazenar as imagens como artifact no GitHub Actions (para download manual)
       - name: Upload generated images
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: snake-images
           path: dist/
