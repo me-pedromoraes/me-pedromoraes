@@ -47,7 +47,7 @@ Busco constantemente novos desafios para aprimorar minhas habilidades e contribu
 
 ##  📫 Conecte-se comigo
 
-* **LinkedIn:** [linkedin.com/in/pedro-henrique-de-moraes/](https://www.linkedin.com/in/me-pedromoraes/)
+* **LinkedIn:** [linkedin.com/in/me-pedromoraes/](https://www.linkedin.com/in/me-pedromoraes/)
 * **E-mail:** pedrohmsjc@gmail.com 
 
 **#frontenddeveloper #webdeveloper #html #css #javascript #angular #react #frontendDesenvolvedor**
